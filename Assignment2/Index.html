@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SearchandFilter</title>
+  <link href="style.css" rel="stylesheet">
+  <script defer src="./app.js"></script>
+</head>
+
+<body>
+  <div class="row">
+    <div>
+      <h1 style="align-self: center; margin: 40px 0px 0px 700px;">Our Store</h1>
+    </div>
+    <div class="btn-group" style="margin: 50px 0px 0px 500px;">
+      <button  onclick="myFunction1()">All</button>
+      <button id="bt1" onclick="myFunction2()">Cakes</button>
+      <button id="bt2" onclick="myFunction3()">CupCakes</button>
+      <button id="bt3" onclick="myFunction4()">Sweets</button>
+      <button id="bt4" onclick="myFunction5()">Donoughts</button>
+    </div>
+    <div>
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Type something to search items.." style="padding: 10px; width: 40%; margin: 50px 0px 50px 450px;">
+    <!-- <input class="form-control" id="listSearch" type="text" onkeyup="myFunction()" placeholder="Type something to search items" style="padding: 10px; width: 40%; margin: 50px 0px 50px 450px;"> -->
+  </div>
+  <div class="card-comp" id="card-c">
+    <div class="card"">
+      <div class="image">
+        <img src="./Images/cupcake.jpg" alt="Avatar" style="width:100%" >
+      </div>
+      <div class="container" id="card1">
+        <h4><b>CupCake</b></h4>
+        <h3>$5</h3>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./Images/cupcake2.jpg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>CupCake</b></h4>
+        <h3>$3</h3>
+      </div>
+    </div>
+    <div class="card">
+        <img src="./Images/cake.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Cake</b></h4>
+          <h3>$7</h3>        
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/sweet1.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Sweet</b></h4>
+          <h3>$10</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/cupcake3.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>CupCake</b></h4>
+          <h3>$5</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/cake3.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Cake</b></h4>
+          <h3>$11</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Images/cupcake6.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>CupCake</b></h4>
+          <h3>$5</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/sweet2.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Sweet</b></h4>
+          <h3>$12</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/cupcake4.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>CupCake</b></h4>
+          <h3>$6</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/cakes4.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Cake</b></h4>
+          <h3>$15</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/sweet3.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Sweet</b></h4>
+          <h3>$12</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Images/cupcake5.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>CupCake</b></h4>
+          <h3>$3</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/cupcake8.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>CupCake</b></h4>
+          <h3>$6</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/cakes5.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Cake</b></h4>
+          <h3>$14</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/sweet5.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Sweet</b></h4>
+          <h3>$10</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/sweet6.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Sweet</b></h4>
+          <h3>$11</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/cupcake10.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>CupCake</b></h4>
+          <h3>$4</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/cake2.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Cake</b></h4>
+          <h3>$12</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/cupcake.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>CupCake</b></h4>
+          <h3>$2.9</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/cake9.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Cake</b></h4>
+          <h3>$12</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/cake_chocolate.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Cake</b></h4>
+          <h3>$20</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/sweet6.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Sweet</b></h4>
+          <h3>$16</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/cake_velvet.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Cake</b></h4>
+          <h3>$21</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/donought1.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Donought</b></h4>
+          <h3>$21</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/donought2.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Donought</b></h4>
+          <h3>$21</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/donought3.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Donought</b></h4>
+          <h3>$21</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/donought4.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Donought</b></h4>
+          <h3>$21</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/donought5.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Donought</b></h4>
+          <h3>$21</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
